@@ -1,0 +1,42 @@
+input.onPinPressed(TouchPin.P0, function () {
+    // means run the code inside it 36 times,
+    // each time set the 变量"index" to 0,1,2,3,...,34,35
+    for (let index = 0; index <= 35; index++) {
+        if (morce.compare(morcecodelist[index]) == 0) {
+            let numberletterlist: number[] = []
+            basic.showString("" + (numberletterlist[index]))
+        }
+    }
+    // clear the morce code which user type
+    morce = ""
+})
+input.onButtonPressed(Button.A, function () {
+    morce = "" + morce + "."
+})
+input.onButtonPressed(Button.B, function () {
+    morce = "" + morce + "-"
+})
+let morcecodelist: string[] = []
+let morce = ""
+// clear the morce code which user type
+// （not set all numbers and letters yet）
+morce = ""
+// set the morce codes list
+morcecodelist = [
+"-----",
+".----",
+"..---",
+"...--",
+"....-",
+"....."
+]
+// set the number and letter which is the same 顺序 with the morce code list
+// （not set all numbers and letters yet）
+morcecodelist = [
+"-----",
+".----",
+"..---",
+"...--",
+"....-",
+"....."
+]
