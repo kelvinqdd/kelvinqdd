@@ -1,0 +1,50 @@
+input.onButtonPressed(Button.A, function () {
+    morce = "" + morce + "."
+})
+input.onButtonPressed(Button.AB, function () {
+    if (morce.compare(".----") == 0) {
+        basic.showNumber(1)
+        morce = ""
+    }
+    if (morce.compare("..---") == 0) {
+        basic.showNumber(2)
+        morce = ""
+    }
+    if (morce.compare("...--") == 0) {
+        basic.showNumber(3)
+        morce = ""
+    }
+    if (morce.compare("....-") == 0) {
+        basic.showNumber(4)
+        morce = ""
+    }
+    if (morce.compare(".....") == 0) {
+        basic.showNumber(5)
+        morce = ""
+    }
+    if (morce.compare("-....") == 0) {
+        basic.showNumber(6)
+        morce = ""
+    }
+    if (morce.compare("--...") == 0) {
+        basic.showNumber(7)
+        morce = ""
+    }
+    if (morce.compare("---..") == 0) {
+        basic.showNumber(8)
+        morce = ""
+    }
+    if (morce.compare("----.") == 0) {
+        basic.showNumber(9)
+        morce = ""
+    }
+    if (morce.compare("-----") == 0) {
+        basic.showNumber(0)
+        morce = ""
+    }
+})
+input.onButtonPressed(Button.B, function () {
+    morce = "" + morce + "-"
+})
+let morce = ""
+morce = ""
